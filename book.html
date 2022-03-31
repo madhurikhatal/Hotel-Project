@@ -1,0 +1,75 @@
+<html>
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+body{
+	color : white;
+	
+	background-color : black;
+	background-size:1500px 700px;
+	text-decoration:bold;
+}
+h2{
+	text-align:center;
+	color:white;
+font-size:40px;
+}
+#id1
+{
+	background:none;
+	border:6px solid white; 
+	height:150%;
+	width:80%;
+	text-color:white;
+}
+
+h3{
+	text-align:left;
+font-size:40px;}
+h4{
+	color:white;
+	font-size:25px;
+}
+</style>
+
+
+<body background="../static/img/b.jpg">
+<h3><center>Book Now</center></h3>
+<center>
+<div id="id1">
+
+First Name :&nbsp <input  class="form-text" type=text required autofocus><br><br>
+Last Name  : &nbsp<input  class="form-text" type=text required autofocus><br><br>
+Address  &nbsp &nbsp :&nbsp&nbsp&nbsp <input   class="form-text" type=text required><br><br>
+Aadhar No :&nbsp<input  class="form-text" type=text required><br><br>
+Email :<input  class="form-text" type=email required autofocus><br><br>
+Phone &nbsp &nbsp : &nbsp<input   class="form-text"type=number required><br><br>
+----------------------------------------------------------------<br>
+Select Bed Type &nbsp &nbsp :&nbsp &nbsp &nbsp &nbsp &nbsp<select>
+<option>Single</option>
+<option>Double</option>
+</select>
+<br><br>
+Select Accomodation &nbsp : &nbsp&nbsp &nbsp <select>
+<option>Premium</option>
+<option>Gold</option>
+<option>Silver</option>
+</select><br>
+-----------------------------------------------------------------
+<br>
+Check In&nbsp&nbsp &nbsp : &nbsp<input type=date><br><br>
+Check Out&nbsp&nbsp &nbsp : &nbsp <input type=date>
+<br><br>
+Select Payment &nbsp&nbsp &nbsp:&nbsp&nbsp &nbsp &nbsp<select>
+<option>Credit</option>
+<option>Debit</option>
+<option>Cash</option>
+</select><br><br>
+----------------------------------------------------------------<br>
+<input  class="btn btn-outline-success" type=submit value=Proceed id="in">
+</form>
+</div>
+</center>
+</body>
+{% endblock body %}
+</html>

@@ -1,0 +1,81 @@
+ <html>
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+h4{
+	text-decoration:bold;
+font-size:45px;
+}
+
+input{font-size:25px;}
+
+
+body{
+	color : white;
+	
+	background-color : black;
+	
+	background-size:100% 100%;
+	text-decoration:bold;
+  }
+
+
+#id1{font-size:30px;
+	color:white;
+	}
+	
+
+fieldset
+{
+	color:white;
+             font-size:40px;
+}
+
+h3{
+	text-decoration:bold;
+	text-align:left;
+font-size:45px;
+}
+h2{
+	color:white;
+font-size:45px;
+}
+#id2{
+border:3px solid white; 
+	height:145%;
+	width:80%;
+}
+</style>
+
+
+<body background="../static/img/b.jpg">
+<center><h2>Contact Us</h2></center>
+<form action="/cont" method="post">
+<center>
+<fieldset>
+<div id="id2">
+Contact no. <br><br>Nilesh Patil :7385609998
+     			                <br>Dipti Patil :7448092733<br><br>
+        <label for="fname">&nbsp&nbsp&nbspName :</label>&nbsp&nbsp
+        <input type="text" id="form" name="firstname" placeholder=" Enter Your name.."><br><br>
+        <label for="lname">&nbsp &nbspE-mail : </label>&nbsp 
+        <input type="text" id="form" name="email" placeholder="aaaa@gmail.com"><br><br>
+       
+       
+      Tell Us About Your Queries :<br>
+	&nbsp &nbsp &nbsp 
+	&nbsp &nbsp &nbsp
+	
+&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp<input type="text" id="form" name="subject" placeholder="Write something.." style="height:70"></input><br><br>
+        <input  class="btn btn-outline-success" type="submit" value="submit" id="id1"><br><br>
+</div>
+      </fieldset></center>
+</form>
+</body>
+
+{% endblock body %}
+</html>
+
+
+
+

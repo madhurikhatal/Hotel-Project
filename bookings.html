@@ -1,0 +1,84 @@
+<html>
+{% extends 'layout.html' %}
+{% block body %}
+
+<style>
+b{color:red;
+font-size:40px;
+}
+
+a:hover {
+  color:red;
+font-size:40px;
+}
+#a:hover {
+  color:red;
+font-size:34px;
+}
+body{
+	color : white;
+	background-image:url('book.jpeg');
+	background-color : black;
+	background-size:1500px 700px;
+	text-decoration:bold;
+font-size:40px;
+  }
+h2{
+	text-align:center;
+	color:white;
+font-size:40px;
+}
+input{
+	color:white;
+font-size:30px;
+	background-color:red;}
+	
+
+a{
+	text-decoration:none;
+	color:white;
+font-size:30px;
+}
+#a{
+	text-decoration:none;
+	color:white;
+font-size:30px;
+}
+h3{
+	text-align:left;
+font-size:40px;}
+h4{
+	font-size:25px;
+}
+</style>
+
+<body>
+
+<form>
+&nbsp<a href="/">Home </a>&nbsp &nbsp &nbsp
+<a href="/menu">Menu</a> &nbsp &nbsp &nbsp
+<a href="/chef">Chefs</a> &nbsp &nbsp &nbsp 
+<a href="/bookings"><b>Bookings</b></a> &nbsp &nbsp 
+<a href="/gallery">Gallery</a> &nbsp &nbsp  &nbsp
+<a href="/about">About us</a> &nbsp &nbsp &nbsp
+
+<a href="/cont">Contact us </a>&nbsp &nbsp &nbsp
+<a href="/login">Login</a> &nbsp &nbsp  &nbsp
+
+<center>
+<h3><center>Bookings</center></h3>
+<fieldset>
+
+<a href="/book" id="a">Book Now</a><br><br>
+<a href="/guest" id="a" >Guest Room</a><br><br>
+<a href="/pool" id="a" >Pool</a><br><br>
+<a href="/party" id="a" >Party Hall</a><br><br>
+<a href="/meeting" id="a" >Meeting Hall</a><br><br>
+</fieldset>
+<center><br><a href="/"><input type="button" value="Go To Home"></a> &nbsp &nbsp &nbsp&nbsp
+</center>
+</body>
+
+{%endblock body%}
+</style>
+</html>
